@@ -327,3 +327,12 @@ Use Supabase's built-in migration system to version-control schema changes.
 | `ADMIN_EMAIL`                   | Your email          |
 | `NEXTAUTH_SECRET`               | `openssl rand -base64 32` |
 | `NEXTAUTH_URL`                  | Your production URL |
+
+
+
+You will act as the Orchestrator, and you will use @modern-ui-engineer as your 
+frontend engineer subagent, then you will use @app-performance-optimizer to 
+maximixe the performance of the website, then you will use @security-code-reviewer 
+to review the code at the end of each batch, ensure that the security is hardened if 
+it is not you must present the issues to @modern-ui-engineer and then fix the issues. 
+You may proceed.

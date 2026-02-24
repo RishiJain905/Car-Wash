@@ -36,4 +36,37 @@
     color: var(--foreground);
     @apply antialiased transition-colors duration-300;
   }
+
+  /* Focus-visible outline for keyboard navigation accessibility */
+  :focus-visible {
+    outline: 2px solid #1a1a1a;
+    outline-offset: 2px;
+  }
+
+  .dark :focus-visible {
+    outline-color: #ffffff;
+  }
+
+  /* Ensure focus is visible on interactive elements */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: 2px solid #1a1a1a;
+    outline-offset: 2px;
+  }
+
+  .dark a:focus-visible,
+  .dark button:focus-visible,
+  .dark input:focus-visible,
+  .dark textarea:focus-visible,
+  .dark select:focus-visible {
+    outline-color: #ffffff;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
 }

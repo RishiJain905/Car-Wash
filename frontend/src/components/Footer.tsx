@@ -22,9 +22,9 @@ export function Footer() {
                 <div>
                     <h4 className="font-display font-bold text-lg mb-4">Hours</h4>
                     <ul className="text-gray-400 text-sm space-y-2">
-                        <li className="flex justify-between"><span>Mon - Fri</span> <span>8:00 AM - 8:00 PM</span></li>
-                        <li className="flex justify-between"><span>Saturday</span> <span>9:00 AM - 6:00 PM</span></li>
-                        <li className="flex justify-between"><span>Sunday</span> <span>10:00 AM - 4:00 PM</span></li>
+                        <li className="flex flex-col sm:flex-row sm:justify-between"><span>Mon - Fri</span> <span>8:00 AM - 8:00 PM</span></li>
+                        <li className="flex flex-col sm:flex-row sm:justify-between"><span>Saturday</span> <span>9:00 AM - 6:00 PM</span></li>
+                        <li className="flex flex-col sm:flex-row sm:justify-between"><span>Sunday</span> <span>10:00 AM - 4:00 PM</span></li>
                     </ul>
                 </div>
             </div>
