@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Service Packages &amp; Booking - Northside Detailing &amp; Garage</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Lato:wght@300;400;700&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#111111", // Deep Black/Charcoal for primary actions
+            "primary-hover": "#333333",
+            "accent-yellow": "#FDE047", // Subtle yellow accent hinted in one of the reference images
+            "background-light": "#F9FAFB", // Very light grey/white
+            "background-dark": "#121212", // Dark mode background
+            "surface-light": "#FFFFFF",
+            "surface-dark": "#1E1E1E",
+            "text-light": "#1F2937",
+            "text-dark": "#E5E7EB",
+            "border-light": "#E5E7EB",
+            "border-dark": "#374151",
+          },
+          fontFamily: {
+            display: ["'Playfair Display'", "serif"],
+            body: ["'Lato'", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body
+  class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body antialiased transition-colors duration-300">
+  <nav
+    class="sticky top-0 z-50 bg-surface-light/90 dark:bg-surface-dark/90 backdrop-blur-md border-b border-border-light dark:border-border-dark shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex-shrink-0 flex items-center">
+          <a class="font-display font-bold text-xl tracking-wider text-primary dark:text-white uppercase"
+            href="index.html">
+            Northside Detailing
+          </a>
+        </div>
+        <div class="hidden md:flex space-x-8 items-center">
+          <a class="text-sm font-medium hover:text-gray-500 dark:hover:text-gray-300 transition-colors"
+            href="index.html">Home</a>
+          <a class="text-sm font-medium hover:text-gray-500 dark:hover:text-gray-300 transition-colors"
+            href="index.html#about">About Us</a>
+          <a class="text-sm font-medium text-primary dark:text-white font-bold border-b-2 border-primary dark:border-white pb-1"
+            href="packages.html">Our Services</a>
+          <a class="text-sm font-medium hover:text-gray-500 dark:hover:text-gray-300 transition-colors"
+            href="index.html#contact">Contact</a>
+          <a class="bg-primary hover:bg-primary-hover text-white px-5 py-2 text-sm font-medium transition-colors cursor-pointer"
+            href="#booking-section">
+            Book Now
+          </a>
+          <button class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+            onclick="document.documentElement.classList.toggle('dark')">
+            <span class="material-icons text-xl dark:hidden">dark_mode</span>
+            <span class="material-icons text-xl hidden dark:block">light_mode</span>
+          </button>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button class="text-gray-500 hover:text-primary dark:text-gray-300 dark:hover:text-white p-2">
+            <span class="material-icons">menu</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <header class="py-16 md:py-24 bg-surface-light dark:bg-surface-dark text-center px-4">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-primary dark:text-white mb-6">
+        Select Your Package
+      </h1>
+      <p class="text-lg text-gray-600 dark:text-gray-400 font-light max-w-2xl mx-auto">
+        Revitalize your ride with our premium detailing services. Choose the level of care your vehicle deserves.
+      </p>
+    </div>
+  </header>
+  <section class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 items-start">
+      <div
+        class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col h-full relative group">
+        <div class="mb-6">
+          <h3 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-2">SILVER</h3>
+          <div class="flex items-baseline">
+            <span class="text-4xl font-extrabold text-primary dark:text-white">$70</span>
+            <span class="ml-2 text-sm text-gray-500 dark:text-gray-400">/ session</span>
+          </div>
+          <p class="mt-4 text-sm text-gray-500 dark:text-gray-400 italic">Essential care for everyday shine.</p>
+        </div>
+        <ul class="space-y-4 mb-8 flex-1">
+          <li class="flex items-start">
+            <span class="material-icons text-green-500 text-sm mr-2 mt-1">check_circle</span>
+            <span class="text-sm text-gray-700 dark:text-gray-300">Exterior Hand Wash</span>
+          </li>
+          <li class="flex items-start">
+            <span class="material-icons text-green-500 text-sm mr-2 mt-1">check_circle</span>
+            <span class="text-sm text-gray-700 dark:text-gray-300">Wheel &amp; Tire Cleaning</span>
+          </li>
+          <li class="flex items-start">
+            <span class="material-icons text-green-500 text-sm mr-2 mt-1">check_circle</span>
+            <span class="text-sm text-gray-700 dark:text-gray-300">Interior Vacuum</span>
+          </li>
+          <li class="flex items-start">
+            <span class="material-icons text-green-500 text-sm mr-2 mt-1">check_circle</span>
+            <span class="text-sm text-gray-700 dark:text-gray-300">Window Cleaning</span>
+          </li>
+        </ul>
+        <button
+          class="w-full block bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 text-primary dark:text-white font-bold py-3 px-4 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors uppercase tracking-widest text-xs">
+          Select Package
+        </button>
+      </div>
+      <div
+        class="bg-surface-light dark:bg-surface-dark border-2 border-primary dark:border-white p-8 shadow-xl transform md:-translate-y-4 relative flex flex-col h-full z-10">
+        <div class="absolute top-0 right-0 left-0 -mt-4 flex justify-center">
+          <span class="bg-primary text-white text-xs font-bold px-4 py-1 uppercase tracking-widest shadow-sm">
+            Best Seller
+          </span>
+        </div>
+        <div class="mb-6 mt-4">
+          <h3 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-2">GOLD</h3>
+          <div class="flex items-baseline">
+            <span class="text-4xl font-extrabold text-primary dark:text-white">$140</span>
+            <span class="ml-2 text-sm text-gray-500 dark:text-gray-400">/ session</span>
+          </div>
+          <p class="mt-4 text-sm text-gray-500 dark:text-gray-400 italic">Deep cleaning for a showroom finish.</p>
+        </div>
+        <ul class="space-y-4 mb-8 flex-1">
+          <li class="flex items-start">
+            <span class="material-icons text-primary dark:text-white text-sm mr-2 mt-1">star</span>
+            <span class="text-sm font-semibold text-gray-900 dark:text-white">Everything in Silver +</span>
+          </li>
+          <li class="flex items-start">
+            <span class="material-icons text-green-500 text-sm mr-2 mt-1">check_circle</span>
+            <span class="text-sm text-gray-700 dark:text-gray-300">Hand Wax Protection</span>
+          </li>
+          <li class="flex items-start">
+            <span class="material-icons text-green-500 text-sm mr-2 mt-1">check_circle</span>
+            <span class="text-sm text-gray-700 dark:text-gray-300">Leather Conditioning</span>
+          </li>
+          <li class="flex items-start">
+            <span class="material-icons text-green-500 text-sm mr-2 mt-1">check_circle</span>
+            <span class="text-sm text-gray-700 dark:text-gray-300">Steam Clean Interior</span>
+          </li>
+          <li class="flex items-start">
+            <span class="material-icons text-green-500 text-sm mr-2 mt-1">check_circle</span>
+            <span class="text-sm text-gray-700 dark:text-gray-300">Door Jambs Detail</span>
+          </li>
+        </ul>
+        <button
+          class="w-full block bg-primary hover:bg-primary-hover text-white font-bold py-4 px-4 transition-colors uppercase tracking-widest text-xs shadow-lg">
+          Select Package
+        </button>
+      </div>
+      <div
+        class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col h-full relative group">
+        <div class="mb-6">
+          <h3 class="font-display text-2xl font-bold text-gray-900 dark:text-white mb-2">DIAMOND</h3>
+          <div class="flex items-baseline">
+            <span class="text-4xl font-extrabold text-primary dark:text-white">$200</span>
+            <span class="ml-2 text-sm text-gray-500 dark:text-gray-400">/ session</span>
+          </div>
+          <p class="mt-4 text-sm text-gray-500 dark:text-gray-400 italic">Ultimate luxury and protection.</p>
+        </div>
+        <ul class="space-y-4 mb-8 flex-1">
+          <li class="flex items-start">
+            <span class="material-icons text-primary dark:text-white text-sm mr-2 mt-1">star</span>
+            <span class="text-sm font-semibold text-gray-900 dark:text-white">Everything in Gold +</span>
+          </li>
+          <li class="flex items-start">
+            <span class="material-icons text-green-500 text-sm mr-2 mt-1">check_circle</span>
+            <span class="text-sm text-gray-700 dark:text-gray-300">Clay Bar Treatment</span>
+          </li>
+          <li class="flex items-start">
+            <span class="material-icons text-green-500 text-sm mr-2 mt-1">check_circle</span>
+            <span class="text-sm text-gray-700 dark:text-gray-300">Machine Polish (Paint Correction)</span>
+          </li>
+          <li class="flex items-start">
+            <span class="material-icons text-green-500 text-sm mr-2 mt-1">check_circle</span>
+            <span class="text-sm text-gray-700 dark:text-gray-300">Ceramic Sealant Application</span>
+          </li>
+          <li class="flex items-start">
+            <span class="material-icons text-green-500 text-sm mr-2 mt-1">check_circle</span>
+            <span class="text-sm text-gray-700 dark:text-gray-300">Engine Bay Detail</span>
+          </li>
+        </ul>
+        <button
+          class="w-full block bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 text-primary dark:text-white font-bold py-3 px-4 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors uppercase tracking-widest text-xs">
+          Select Package
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="py-16 px-4 bg-gray-50 dark:bg-gray-900/50 border-t border-border-light dark:border-border-dark mt-8"
+    id="booking-section">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="font-display text-3xl text-primary dark:text-white mb-2">Finalize Your Booking</h2>
+        <p class="text-gray-600 dark:text-gray-400">You selected the <span
+            class="font-bold text-primary dark:text-white">GOLD Package</span>. Choose a time that works for you.</p>
+      </div>
+      <div
+        class="bg-surface-light dark:bg-surface-dark shadow-lg rounded-sm overflow-hidden border border-border-light dark:border-border-dark">
+        <div class="md:flex">
+          <div class="md:w-1/2 p-6 md:p-8 border-b md:border-b-0 md:border-r border-gray-200 dark:border-gray-700">
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-6 flex items-center">
+              <span class="material-icons mr-2 text-gray-400">calendar_today</span> Select Date
+            </h3>
+            <div class="mb-4">
+              <div class="flex justify-between items-center mb-4">
+                <button class="text-gray-400 hover:text-primary dark:hover:text-white"><span
+                    class="material-icons">chevron_left</span></button>
+                <span class="font-bold text-gray-800 dark:text-gray-200">October 2023</span>
+                <button class="text-gray-400 hover:text-primary dark:hover:text-white"><span
+                    class="material-icons">chevron_right</span></button>
+              </div>
+              <div class="grid grid-cols-7 gap-2 text-center text-sm">
+                <span class="text-gray-400 text-xs">Su</span>
+                <span class="text-gray-400 text-xs">Mo</span>
+                <span class="text-gray-400 text-xs">Tu</span>
+                <span class="text-gray-400 text-xs">We</span>
+                <span class="text-gray-400 text-xs">Th</span>
+                <span class="text-gray-400 text-xs">Fr</span>
+                <span class="text-gray-400 text-xs">Sa</span>
+                <span class="text-gray-300 py-2">1</span>
+                <span class="text-gray-300 py-2">2</span>
+                <span class="text-gray-300 py-2">3</span>
+                <span class="text-gray-300 py-2">4</span>
+                <button
+                  class="py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full text-gray-600 dark:text-gray-400">5</button>
+                <button
+                  class="py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full text-gray-600 dark:text-gray-400">6</button>
+                <span class="text-gray-300 py-2">7</span>
+                <span class="text-gray-300 py-2">8</span>
+                <button
+                  class="py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full text-gray-600 dark:text-gray-400">9</button>
+                <button
+                  class="py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full text-gray-600 dark:text-gray-400">10</button>
+                <button class="py-2 bg-primary text-white rounded-full font-bold shadow-md">11</button>
+                <button
+                  class="py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full text-gray-600 dark:text-gray-400">12</button>
+                <button
+                  class="py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full text-gray-600 dark:text-gray-400">13</button>
+                <span class="text-gray-300 py-2">14</span>
+              </div>
+            </div>
+            <h4 class="text-sm font-semibold text-gray-500 dark:text-gray-400 mt-8 mb-3 uppercase tracking-wider">
+              Available Slots (2 hrs)</h4>
+            <div class="grid grid-cols-2 gap-3">
+              <button
+                class="border border-gray-300 dark:border-gray-600 py-2 px-3 text-sm text-gray-600 dark:text-gray-300 hover:border-primary dark:hover:border-white hover:text-primary dark:hover:text-white transition-colors rounded">09:00
+                AM</button>
+              <button
+                class="bg-primary text-white py-2 px-3 text-sm border border-primary transition-colors rounded shadow-sm">11:00
+                AM</button>
+              <button
+                class="border border-gray-300 dark:border-gray-600 py-2 px-3 text-sm text-gray-600 dark:text-gray-300 hover:border-primary dark:hover:border-white hover:text-primary dark:hover:text-white transition-colors rounded">01:00
+                PM</button>
+              <button
+                class="border border-gray-300 dark:border-gray-600 py-2 px-3 text-sm text-gray-600 dark:text-gray-300 hover:border-primary dark:hover:border-white hover:text-primary dark:hover:text-white transition-colors rounded">03:00
+                PM</button>
+            </div>
+          </div>
+          <div class="md:w-1/2 p-6 md:p-8 bg-gray-50 dark:bg-gray-800/50 flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-6 flex items-center">
+                <span class="material-icons mr-2 text-gray-400">receipt_long</span> Booking Summary
+              </h3>
+              <div class="space-y-4 mb-8">
+                <div class="flex justify-between text-sm">
+                  <span class="text-gray-600 dark:text-gray-400">Service</span>
+                  <span class="font-medium text-gray-900 dark:text-white">Gold Package</span>
+                </div>
+                <div class="flex justify-between text-sm">
+                  <span class="text-gray-600 dark:text-gray-400">Date</span>
+                  <span class="font-medium text-gray-900 dark:text-white">Wed, Oct 11</span>
+                </div>
+                <div class="flex justify-between text-sm">
+                  <span class="text-gray-600 dark:text-gray-400">Time</span>
+                  <span class="font-medium text-gray-900 dark:text-white">11:00 AM - 01:00 PM</span>
+                </div>
+                <div class="border-t border-gray-200 dark:border-gray-700 pt-3 flex justify-between items-center">
+                  <span class="text-base font-bold text-gray-900 dark:text-white">Total</span>
+                  <span class="text-xl font-bold text-primary dark:text-white">$140.00</span>
+                </div>
+              </div>
+              <h4 class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-3 uppercase tracking-wider">Payment
+                Options</h4>
+              <div class="space-y-3">
+                <label
+                  class="flex items-center p-3 border border-gray-200 dark:border-gray-600 rounded bg-white dark:bg-gray-800 cursor-pointer hover:border-primary dark:hover:border-white transition-colors group">
+                  <input class="form-radio text-primary focus:ring-primary h-4 w-4" name="payment" type="radio" />
+                  <div class="ml-3 flex-1">
+                    <span
+                      class="block text-sm font-medium text-gray-900 dark:text-white group-hover:text-primary dark:group-hover:text-white transition-colors">Pay
+                      50% Deposit Now</span>
+                    <span class="block text-xs text-gray-500 dark:text-gray-400">Secure credit card payment</span>
+                  </div>
+                  <span class="text-sm font-bold text-gray-700 dark:text-gray-300">$70.00</span>
+                </label>
+                <label
+                  class="flex items-center p-3 border border-primary dark:border-white bg-white dark:bg-gray-800 rounded cursor-pointer ring-1 ring-primary dark:ring-white">
+                  <input checked="" class="form-radio text-primary focus:ring-primary h-4 w-4" name="payment"
+                    type="radio" />
+                  <div class="ml-3 flex-1">
+                    <span class="block text-sm font-medium text-gray-900 dark:text-white">Pay in Person</span>
+                    <span class="block text-xs text-green-600 dark:text-green-400 flex items-center mt-1">
+                      <span class="material-icons text-xs mr-1">payments</span> Cash preferred
+                    </span>
+                  </div>
+                  <span class="text-sm font-bold text-gray-700 dark:text-gray-300">$140.00</span>
+                </label>
+              </div>
+            </div>
+            <button
+              class="w-full bg-primary hover:bg-primary-hover text-white font-bold py-3 px-4 mt-8 transition-colors uppercase tracking-widest text-sm shadow-md">
+              Confirm Booking
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-primary text-white py-12 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="font-display font-bold text-lg mb-4">Northside Detailing</h4>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Premium car care services dedicated to reviving the beauty of your vehicle. Inside and out, we handle it with
+          passion.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-lg mb-4">Contact</h4>
+        <ul class="text-gray-400 text-sm space-y-2">
+          <li class="flex items-center"><span class="material-icons text-sm mr-2">location_on</span> 123 Garage Blvd,
+            Northside</li>
+          <li class="flex items-center"><span class="material-icons text-sm mr-2">phone</span> (555) 123-4567</li>
+          <li class="flex items-center"><span class="material-icons text-sm mr-2">email</span> hello@northsidedetail.com
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-lg mb-4">Hours</h4>
+        <ul class="text-gray-400 text-sm space-y-2">
+          <li class="flex justify-between"><span>Mon - Fri</span> <span>8:00 AM - 6:00 PM</span></li>
+          <li class="flex justify-between"><span>Saturday</span> <span>9:00 AM - 4:00 PM</span></li>
+          <li class="flex justify-between"><span>Sunday</span> <span>Closed</span></li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+      © 2023 Northside Detailing &amp; Garage. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+
+</html>
